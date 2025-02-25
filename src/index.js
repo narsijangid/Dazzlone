@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Context, { FirebaseContext } from './store/Context';
 import { Firebase } from './firebase';
-import './Components/Header/Header.css';
-import './Components/Menu/Menu.css';
-import './Components/Category/Category.css';
-import './Components/Login/Login.css';
+
 
 
 ReactDOM.render(
