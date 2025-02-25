@@ -1,5 +1,5 @@
 [build]
-  command = "NODE_OPTIONS=--openssl-legacy-provider yarn build"
+    command = "CI=false yarn build"
   publish = "build"
 
 [context.production.environment]
