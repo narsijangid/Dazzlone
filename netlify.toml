@@ -1,3 +1,7 @@
 [build]
-  command = "yarn build"
-  environment = { NODE_VERSION = "18" }
+  command = "NODE_OPTIONS=--openssl-legacy-provider yarn build"
+  publish = "build"
+
+[context.production.environment]
+  NODE_VERSION = "18"
+  NODE_OPTIONS = "--openssl-legacy-provider"
