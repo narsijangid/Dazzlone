@@ -28,6 +28,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
+  "resolutions": {
+  "@babel/core": "^7.16.0"
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9"
   }
 }
