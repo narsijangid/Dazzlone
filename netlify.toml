@@ -1,5 +1,5 @@
 [build]
-    command = "CI=false yarn build"
+    command = "CI= npm run build"
   publish = "build"
 
 [context.production.environment]
