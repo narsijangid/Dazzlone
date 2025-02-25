@@ -1,0 +1,73 @@
+/* Reset all default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make html and body elements take up the full viewport */
+
+/* Ensure the outer wrapper takes full screen */
+.chat__page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure main container fills the screen */
+.chatPage__main {
+    display: flex;
+    flex: 1;  /* This ensures it takes up the remaining space */
+    width: 100%;
+}
+
+/* The container that holds the chat and the sidebar */
+.chatPage__container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100vh;  /* Full height of the viewport */
+    overflow: hidden;  /* Prevents overflow */
+}
+
+/* Sidebar chat section */
+.chatPage__allChat {
+    width: 35%;  /* Sidebar width */
+    height: 100vh; /* Full height of container */
+
+
+
+}
+
+/* Main chat section */
+.chatPage__chats {
+    width: 60%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    border-radius: 7px;
+    margin-left: 20px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 800px) {
+    .allChat__only {
+        display: none;
+    }
+    .chat__only {
+        display: none;
+    }
+    .chatPage__allChat {
+        width: 98%;
+        height: 90vh;
+    }
+    .chatPage__chats {
+        width: 95%;
+        height: 90vh;
+        margin: 0;
+    }
+    .chatPage__main {
+        padding: 0;
+        margin: 0;
+    }
+}
